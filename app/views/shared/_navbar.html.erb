@@ -1,10 +1,14 @@
-<% if flash[:notice] %>
-  <div class="alert alert-info mt-4 container-fluid w-50 d-flex flex-column align-items-center" role="alert">
-    <%= flash[:notice] %>
+<nav class="back-primary navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Rails Budget</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </div>
-  <% end %>
-<% if flash[:alert] %>
-  <div class="alert alert-warning mt-4 container-fluid w-50 d-flex flex-column align-items-center" role="alert">
-    <%= flash[:alert] %>
+  <div class="collapse" id="navbarToggleExternalContent">
+  <div class="back-primary p-4">
+    <%= link_to "Sign Up", new_user_registration_path, class: "btn" %>
+    <%= link_to "Login", new_user_session_path, class: "btn" %>
   </div>
-<% end %>
+  </div>
+</nav>
