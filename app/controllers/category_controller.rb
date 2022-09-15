@@ -1,5 +1,13 @@
 class CategoryController < ApplicationController
-  def index; end
+  before_action :authenticate_user!, except: :index
+
+  def index
+    if user_signed_in?
+      @categories = current_user.categories
+    else
+      render 'splash'
+    end
+  end
 
   def new
     @category = Category.new
