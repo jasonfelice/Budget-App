@@ -7,8 +7,12 @@
   </div>
   <div class="collapse" id="navbarToggleExternalContent">
   <div class="back-primary p-4">
-    <%= link_to "Sign Up", new_user_registration_path, class: "btn" %>
-    <%= link_to "Login", new_user_session_path, class: "btn" %>
+    <% if user_signed_in? %>
+      <%= link_to "Sign Out", destroy_user_session_path, 'data-turbo-method': :delete, class: "btn btn-outline-danger me-5" %>
+    <% else %>
+      <%= link_to "Sign Up", new_user_registration_path, class: "btn" %>
+      <%= link_to "Login", new_user_session_path, class: "btn" %>
+    <% end %>
   </div>
   </div>
 </nav>
