@@ -7,7 +7,7 @@
   <%= form_with model: @category, url: category_index_path, method: :post do |f| %>
     <div class="mb-3">
       <%= f.label :name, class: "form-label" %><br />
-      <%= f.email_field :name, autofocus: true, autocomplete: "email", class: "form-control" %>
+      <%= f.text_field :name, class: "form-control" %>
     </div>
      <div class="mb-3">
       <%= f.label :icon, class: "form-label" %><br />
