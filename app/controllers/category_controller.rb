@@ -25,6 +25,17 @@ class CategoryController < ApplicationController
     end
   end
 
+  def destroy
+    @category = current_user.categories.find(params[:id])
+    if @category.destroy
+      flash.now[:notice] = "Category deleted successfully!"
+      redirect_to category_index_path
+    else
+      flash.now[:alert] = "Something went wrong while deleting the category!"
+      render :index
+    end
+  end
+
   private
 
   def category_params
