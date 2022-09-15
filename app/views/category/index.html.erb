@@ -1,6 +1,6 @@
 <h1 class="text-center my-5">Categories</h1>
 <% if @categories.count > 0 %>
-  <div>
+  <div class="d-flex flex-column gap-3">
     <% @categories.each do |category| %>
       <div class="c_card card flex-row align-items-center p-2 gap-4">
         <%= image_tag category.icon %>
