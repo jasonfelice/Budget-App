@@ -19,7 +19,7 @@ class RecordsController < ApplicationController
         flash.now[:notice] = "#{@record.name} created successfully!"
         redirect_to category_records_path(@category)
       else
-        flash.now[:alert] = "Something went wrong!"
+        flash.now[:alert] = 'Something went wrong!'
         render :new
       end
     else
