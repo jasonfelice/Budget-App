@@ -2,7 +2,7 @@ class RecordsController < ApplicationController
   before_action :authenticate_user!
   def index
     @category = current_user.categories.find(params[:category_id])
-    @records = @category.records
+    @records = @category.records.order(created_at: :desc)
   end
 
   def new
