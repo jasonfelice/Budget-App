@@ -1,4 +1,4 @@
-# Budget App
+# Budget App.
 > Budget App
 
 ## Live demo
