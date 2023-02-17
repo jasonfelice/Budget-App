@@ -1,8 +1,9 @@
-# Budget App.
-> Budget App
+# Budget App
+<p align="center"><img  src="https://user-images.githubusercontent.com/92215878/190600670-758cb98b-e642-4958-bd21-c978a428d3d5.png"/></p>
 
+> This Rails Budget app allows users to record their transactions for a specific category.
 ## Live demo
-[Comming soon](/)
+[Heroku](https://gentle-atoll-76081.herokuapp.com/)
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
@@ -20,8 +21,8 @@ To get a local copy up and running follow these simple example steps.
 👤 **Jake Felice**
 
 - GitHub: [@jasonfelice](https://github.com/jasonfelice)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jake-felice/)
 - Twitter: [@jasonfelice0](https://twitter.com/jasonfelice0)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jason-felice-11a5a622b/)
 
 ## 🤝 Contributing
 
